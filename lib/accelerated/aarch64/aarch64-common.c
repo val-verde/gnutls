@@ -43,7 +43,7 @@
 # endif
 #endif
 
-#if defined(__GNUC__)
+#if defined(__GNUC__) && !defined(__APPLE__)
 __attribute__((visibility("hidden")))
 #elif defined(__SUNPRO_C)
 __hidden
