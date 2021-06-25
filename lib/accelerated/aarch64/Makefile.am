@@ -33,9 +33,6 @@ if ENABLE_MINITASN1
 AM_CPPFLAGS += -I$(srcdir)/../../minitasn1
 endif
 
-#ensure that we have all aarch64 instruction sets enabled for the assembler
-AM_CCASFLAGS = -Wa,-march=all
-
 EXTRA_DIST = README
 
 noinst_LTLIBRARIES = libaarch64.la
